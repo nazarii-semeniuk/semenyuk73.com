@@ -7,10 +7,10 @@
                     <h2>Full Stack Web Developer</h2>
                     <div class="buttons">
                         <a href="/cv.pdf" class="button">
-                            Завантажити CV
+                            {{ $t('downloadCV') }}
                         </a>
                         <a href="#" class="button">
-                            Зв'язатися зі мною
+                            {{ $t('contactMe') }}
                         </a>
                     </div>
                 </div>

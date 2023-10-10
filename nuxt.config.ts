@@ -16,6 +16,14 @@ export default defineNuxtConfig({
       ]
     }
   },
+  modules: [
+    '@nuxtjs/i18n'
+  ],
+  i18n: {
+    locales: ['uk', 'en'],
+    defaultLocale: 'uk',
+    strategy: 'prefix_except_default'
+  },
   css: [
     '@/assets/scss/style.scss'
   ],

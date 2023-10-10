@@ -4,20 +4,20 @@
             <div class="header__wrapper">
                 <ul class="menu">
                     <li>
-                        <nuxt-link to="/">Головна</nuxt-link>
+                        <nuxt-link to="/">{{ $t('menu.homepage') }}</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/experience/">Досвід</nuxt-link>
+                        <nuxt-link to="/experience/">{{ $t('menu.experience') }}</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/pet-projects/">Власні проєкти</nuxt-link>
+                        <nuxt-link to="/pet-projects/">{{ $t('menu.petProjects') }}</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/about">Про мене</nuxt-link>
+                        <nuxt-link to="/about">{{ $t('menu.about') }}</nuxt-link>
                     </li>
                 </ul>
                 <a href="/cv.pdf" class="cv">
-                    Завантажити CV
+                    {{ $t('downloadCV') }}
                 </a>
             </div>
         </div>
