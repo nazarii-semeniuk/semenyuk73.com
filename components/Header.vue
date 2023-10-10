@@ -26,13 +26,11 @@
 
 <style lang="scss" scoped>
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px 0;
-    background: rgba(#fff, 0.5);
-    backdrop-filter: blur(5px);
+    padding-top: 20px;
 
     &__wrapper {
         display: flex;
@@ -63,12 +61,24 @@
         }
 
         .cv {
-            font-size: 24px;
-            padding: 10px;
+            font-size: 20px;
+            padding: 20px;
             border-radius: 20px;
             font-weight: 600;
             text-transform: uppercase;
             color: #fff;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                border-radius: 20px;
+                background: linear-gradient(45deg, rgba(#fff, 0.5), rgba(#fff, 0.15), rgba(#fff, 0.3) 100%);
+            }
         }
     }
 }
