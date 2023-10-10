@@ -1,7 +1,5 @@
 <template>
     <div class="home">
-        <div class="container">
-            <Hero />
-        </div>
+        <Hero />
     </div>
 </template>

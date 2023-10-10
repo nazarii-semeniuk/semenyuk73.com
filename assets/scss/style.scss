@@ -5,9 +5,20 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: $darkColor;
 }
 
 .container {
     max-width: 1340px;
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
 }
